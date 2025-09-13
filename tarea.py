@@ -4,7 +4,7 @@ print("Te encuentras en la entrada de un antiguo y misterioso templo en medio de
 
 print("La jungla a tus espaldas parece oscurecerse y los sonidos de criaturas desconocidas se hacen más fuertes. Debes tomar una decisión rápida.")
 
-decision_1 = input("Te encuentras en la entrada. ¿Qué harás?:\n1.EMPUJAR la pesada puerta de piedra.\n2.DESLIZARTE por la abertura.\n3.INVESTIGAR los alrededores en busca de otra entrada.\n¿Elige una opcion: ").upper()
+decision_1 = input("Te encuentras en la entrada. ¿Qué harás?:\n1.EMPUJAR la pesada puerta de piedra.\n2.INVESTIGAR los alrededores en busca de otra entrada.\n¿Elige una opcion: ").upper()
 if decision_1 == "EMPUJAR" or decision_1 == "1" :
     print("Con un esfuerzo sobrehumano, logras mover la puerta. Al entrar, escuchas un clic bajo tu pie. ¡Una trampa! Unos pinchos caen del techo justo delante de ti. ¿Qué haces?\n")
     decision_1_1 = input("1.SALTAR hacia atrás para salir del templo.\n2.CORRER hacia adelante para esquivar la trampa.\nElige una opcion: ").upper()
@@ -29,7 +29,7 @@ if decision_1 == "EMPUJAR" or decision_1 == "1" :
                 if decision_2 == "SOL" : 
                     print("el liquido hierve violentamente al tocar el simbolo del sol.Un gas espeso y de olor amrgo brota del canal,llenando la sala en segundos.No hay donde correr.\nLa trampa fue acctivada.\n\nFIN EL JUEGO") 
                 elif decision_2 =="LUNA" : 
-                    print("el liquido pateado fluye suavemente por el canal. Escuchas un chasquido y una seccion de la pared se desliza, revelando un pequeño cofre con monedas de plata antiguas y un mapa que muestra la salida segura de la jungla.\n\N¡HAS ENCONTRADO UN TESORO Y ESCAPADO!\N\N FIN") 
+                    print("el liquido pateado fluye suavemente por el canal. Escuchas un chasquido y una seccion de la pared se desliza, revelando un pequeño cofre con monedas de plata antiguas y un mapa que muestra la salida segura de la jungla.\n\n¡HAS ENCONTRADO UN TESORO Y ESCAPADO!\n\n FIN") 
                 else : 
                     print("eligue una opcion valida")  
             elif  decision_1_1_2_1 == "LIBRO" or decision_1_1_2_1 == "3" :
@@ -49,7 +49,7 @@ if decision_1 == "EMPUJAR" or decision_1 == "1" :
             if decision_3 == "NADAR" :
                 print("El agua está helada. Más adelante, la corriente te arrastra hacia una bifurcación. El túnel de la IZQUIERDA tiene una débil luz y corriente suave. El de la DERECHA es oscuro y la corriente es violenta.")
                 decision_3_1 = input("IZQUIERDA.\nDERECHA\n¿cual eligues?: ").upper() 
-                if decision_3_1 == "IZQUQIERDA" :
+                if decision_3_1 == "IZQUIERDA" :
                     print(" Llegas a una gruta iluminada por hongos. En el centro, una estatua de serpiente se traga el agua. Escalas la estatua y encuentras un túnel seco que te lleva a una sala del tesoro olvidada y una salida.\n\n¡HAS ENCONTRADO EL TESORO OCULTO! Tu instinto te ha guiado bien. FIN.")
                 elif decision_3_1 == "DERECHA" :   
                     print("La corriente violenta te arrastra hacia la oscuridad total. El rugido del agua es ensordecedor y sientes que pierdes el control. En la penumbra, apenas distingues una RAÍZ gruesa que cuelga de la pared y sientes ROCAS afiladas cerca de la superficie.")
@@ -90,69 +90,83 @@ if decision_1 == "EMPUJAR" or decision_1 == "1" :
                 decision3_3_1 = input("INVESTIGAR el lugar.\nINTENTAR forzar la puerta principal.\n ¿que eliges") 
                 if decision3_3_1 == "INVESTIGAR" : 
                     print("En el suelo semioculto por el musgo, en cuentras unas marcas extrañas al rededor de la losa que no parecen naturales.Al empujarla.,revelas una trampilla,de madera con un anillo de hierro.\n\n¡HAS ENCONTRADO UNA ENTRADA SECRETA!.")
- # --- CONTINUACIÓN DE LA RAMA "ESCONDERSE" ---
+ 
                 elif decision3_3_1 == "INTENTAR" or decision3_3_1 == "2":
                   print("La puerta está sellada mágicamente. Pierdes demasiado tiempo y la pantera regresa.\n\nFIN DEL JUEGO")
                 else:
                    print("Elige una opción válida.")
             elif decision3_3 == "LANZAR" or decision3_3 == "2":
-              print("La pantera corre hacia el sonido. Es tu oportunidad.")
-              decision3_3_2 = input("1. APROVECHAR para rodear el templo.\n2. EXAMINAR la puerta mientras no está.\n¿Qué eliges?: ").upper()
-              if decision3_3_2 == "APROVECHAR" or decision3_3_2 == "1":
-               print("Te mueves rápido y encuentras la entrada a un río subterráneo.\n\n¡HAS ENCONTRADO UN CAMINO ALTERNATIVO! La aventura continúa.")
-              elif decision3_3_2 == "EXAMINAR" or decision3_3_2 == "2":
-               print("La puerta no cede. La pantera es más rápida de lo que pensabas y regresa.\n\nFIN DEL JUEGO")
+                print("La pantera corre hacia el sonido. Es tu oportunidad.")
+                decision3_3_2 = input("1. APROVECHAR para rodear el templo.\n2. EXAMINAR la puerta mientras no está.\n¿Qué eliges?: ").upper()
+                if decision3_3_2 == "APROVECHAR" or decision3_3_2 == "1":
+                    print("Te mueves rápido y encuentras la entrada a un río subterráneo.\n\n¡HAS ENCONTRADO UN CAMINO ALTERNATIVO! La aventura continúa.")
+                elif decision3_3_2 == "EXAMINAR" or decision3_3_2 == "2":
+                    print("La puerta no cede. La pantera es más rápida de lo que pensabas y regresa.\n\nFIN DEL JUEGO")
+                else:
+                    print("Elige una opción válida.")
             else:
                print("Elige una opción válida.")
         else:
           print("Elige una opción válida.")
-
-# --- RAMA FALTANTE: CORRER HACIA ADELANTE ---
     elif decision_1_1 == "CORRER" or decision_1_1 == "2":
-       print("\n\nCorres esquivando los pinchos y te adentras en un gran salón con dos caminos.")
-       decision_1_1_3 = input("1. Un PUENTE de cuerda inestable a la izquierda.\n2. Unas ESCALERAS oscuras a la derecha.\n¿Qué camino tomas?: ").upper()
-    if decision_1_1_3 == "PUENTE" or decision_1_1_3 == "1":
-          print("A mitad del puente, te atacan unos murciélagos gigantes. El puente se balancea.")
-          decision_puente = input("1. AGITAR los brazos para espantarlos.\n2. CORRER hacia el otro lado.\n¿Qué haces?: ").upper()
-          if decision_puente == "AGITAR" or decision_puente == "1":
-              print("Ahuyentas a los murciélagos, pero el puente se rompe. Quedas colgando de una soga.")
-              decision_soga = input("1. TREPAR con tus últimas fuerzas.\n2. BALANCEARTE para llegar al otro lado.\n¿Qué haces?: ").upper()
-              if decision_soga == "TREPAR" or decision_soga == "1":
+        print("\n\nCorres esquivando los pinchos y te adentras en un gran salón con dos caminos.")
+        decision_1_1_3 = input("1. Un PUENTE de cuerda inestable a la izquierda.\n2. Unas ESCALERAS oscuras a la derecha.\n¿Qué camino tomas?: ").upper()
+        if decision_1_1_3 == "PUENTE" or decision_1_1_3 == "1":
+            print("A mitad del puente, te atacan unos murciélagos gigantes. El puente se balancea.")
+            decision_puente = input("1. AGITAR los brazos para espantarlos.\n2. CORRER hacia el otro lado.\n¿Qué haces?: ").upper()
+            if decision_puente == "AGITAR" or decision_puente == "1":
+                print("Ahuyentas a los murciélagos, pero el puente se rompe. Quedas colgando de una soga.")
+                decision_soga = input("1. TREPAR con tus últimas fuerzas.\n2. BALANCEARTE para llegar al otro lado.\n¿Qué haces?: ").upper()
+                if decision_soga == "TREPAR" or decision_soga == "1":
                   print("Llegas al otro lado justo a tiempo y encuentras un cofre.\n\n¡HAS CONQUISTADO EL ABISMO Y ENCONTRADO EL TESORO!")
-              else:
+                else:
                   print("La soga se rompe y caes al abismo.\n\nFIN DEL JUEGO")
-          else:
+            else:
                 print("Los murciélagos te hacen perder el equilibrio y caes.\n\nFIN DEL JUEGO")
-    elif decision_1_1_3 == "ESCALERAS" or decision_1_1_3 == "2":
-          print("Bajas a una cámara inundada. En el centro hay una palanca.")
-          decision_agua = input("1. NADAR hacia la palanca.\n2. AVANZAR lento hacia una puerta al fondo.\n¿Qué haces?: ").upper()
-          if decision_agua == "NADAR" or decision_agua == "1":
-              print("Al tirar de la palanca, el agua baja pero dos gólems de piedra se activan.")
-              decision_golem = input("1. SALTAR a un pasadizo secreto que se abrió a tus pies.\n2. ENFRENTAR a los gólems.\n¿Qué haces?: ").upper()
-              if decision_golem == "SALTAR" or decision_golem == "1":
-                  print("Caes por un túnel que te lleva fuera de la montaña.\n\n¡HAS LOGRADO ESCAPAR CON VIDA!")
-              else:
-                  print("Los gólems son demasiado fuertes para ti.\n\nFIN DEL JUEGO")
-          else:
-              print("El agua esconde un foso y caes en él.\n\nFIN DEL JUEGO")
-        else:
-            print("Elige una opción válida.")
-    else:
-       print("Elige una opción válida.")
-
-# --- RAMAS FALTANTES DEL INICIO ---
-elif decision_1 == "DESLIZARTE" or decision_1 == "2":
-    print("La decisión de deslizarte fue la misma que te llevó a la cámara de los tres objetos.\nEl camino se une aquí con la historia anterior.")
-    # (Aquí se podría copiar y pegar el código de la decisión_1_1_2 == "DESLIZARTE" para continuar el juego)
-    print("\nAVENTURA CONTINÚA POR ESTA RAMA...")
-
-elif decision_1 == "INVESTIGAR" or decision_1 == "3":
-    print("Investigar los alrededores te lleva a la misma cueva detrás de la cascada.\nEl camino se une aquí con la historia anterior.")
-    # (Aquí se podría copiar y pegar el código de la decisión_1_1_2 == "RODEAR" para continuar el juego)
-    print("\nAVENTURA CONTINÚA POR ESTA RAMA...")
-
-else:
-    print("Elige una opción válida.")        
+        elif decision_1_1_3 == "ESCALERAS" or decision_1_1_3 == "2":
+            print("Bajas a una cámara inundada. En el centro hay una palanca.")
+            decision_agua = input("1. NADAR hacia la palanca.\n2. AVANZAR lento hacia una puerta al fondo.\n¿Qué haces?: ").upper()
+            if decision_agua == "NADAR" or decision_agua == "1":
+                print("Al tirar de la palanca, el agua baja pero dos gólems de piedra se activan.")
+                decision_golem = input("1. SALTAR a un pasadizo secreto que se abrió a tus pies.\n2. ENFRENTAR a los gólems.\n¿Qué haces?: ").upper()
+                if decision_golem == "SALTAR" or decision_golem == "1":
+                    print("Caes por un túnel que te lleva fuera de la montaña.\n\n¡HAS LOGRADO ESCAPAR CON VIDA!")
+                else :
+                    print("\nPresionas los botones en el orden incorrecto. Del cuenco de la estatua sale un dardo envenenado que te alcanza en el cuello. Caes al suelo, paralizado.\n\nUNA MALA DECISIÓN TE HA COSTADO LA VIDA. FIN DEL JUEGO.")
+            else : 
+                print("\nDecides que la estatua no es importante y continúas tu búsqueda. Das un mal paso en el suelo blando y caes en un foso con estacas afiladas que estaba oculto por la maleza.\n\nLA IMPACIENCIA ES TU PEOR ENEMIGO. FIN DEL JUEGO.")    
+        else :
+            print("elige una opcion valida")
+    else :
+        print("elige una opcion valida")            
+        
+elif decision_1 == "INVESTIGAR" or decision_1 == "2":
+    print("\nDecides ser cauteloso y examinas los alrededores de la entrada. Notas que la vegetación es extrañamente densa a la izquierda del templo, como si ocultara algo. A la derecha, escuchas el leve sonido de agua corriente.") 
+    decision_4 = input("\nIZQUIERDA o DERECHA: ") .upper()
+    if decision_4 == "IZQUIERDA": 
+        print("\nTe abres paso a través de las lianas y hojas gigantes. Descubres una estatua de un mono de piedra casi completamente cubierta de musgo. Sus ojos parecen huecos y uno de sus brazos extendidos sostiene un cuenco vacío.")
+        decision_4_1 = input("¿Qué haces?:\n. LIMPIAR la estatua para examinarla mejor.\n. IGNORAR la estatua y seguir buscando.\nElige una opción: ") .upper()
+        if decision_4_1 == "LIMPIAR": 
+            print("\nAl quitar el musgo, revelas una inscripción en la base: 'El sabio ve, oye y calla'. Te das cuenta de que la boca, los ojos y los oídos de la estatua son en realidad botones que se pueden presionar.")
+            decision_4_1_1 = input("Recuerdas la frase. ¿En qué orden presionas los botones?:\n OJOS, OÍDOS, BOCA.\n BOCA, OJOS, OÍDOS.\nElige una opción: ").upper()
+            if decision_4_1_1 == "OJOS, OIDOS, BOCA" : 
+                print("\nPresionas los símbolos en el orden correcto. Escuchas un ruido sordo y la estatua se desliza hacia un lado, revelando una escalera de caracol que desciende a la oscuridad.\n\n¡HAS DESCUBIERTO UNA ENTRADA SECRETA! Tu sabiduría te ha abierto el camino.")
+            elif decision_4_1_1 == "BOCA, OJOS, OIDOS":
+                print("activas una trampa y queda encerrado.\n\nHAS PERDIDO") 
+        elif decision_4_1 == "IGNORAR":
+            print("decides ignorar la estatua y continuas tu camino pero caes en una trampa .\n\nMUERES ATRAPADO")
+        else :
+            print("elige una opcion valida")
+    elif decision_4 == "DERECHA" :
+        print("\nDecides seguir por el camino de la derecha que va a un sendero que te lleva lejos de la jungla.\nHAS ESCAPADO DE LA JUNGLA")  
+    else :
+        print("elige una opcion valida")
+else :
+    print("elige una opcion valida")                                   
+                
+            
+           
+        
                 
             
     
